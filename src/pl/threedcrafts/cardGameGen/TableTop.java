@@ -1,26 +1,18 @@
-package Card;
+package pl.threedcrafts.cardGameGen;
+
 
 import java.util.List;
 import java.util.Scanner;
-
 public class TableTop {
     public static void main(String[] args){
         String pOneClass;
         String pTwoClass;
-
         Scanner scanner = new Scanner(System.in);
         System.out.println("insert first player name");
         String pOneName = scanner.nextLine();
         System.out.println("choose your class, M (magician) or W (warrior)");
-
-
         String pOneClassCode = scanner.nextLine();
         System.out.println(pOneClassCode);
-
-
-
-
-
         System.out.println("insert second player name");
         String pTwoName = scanner.nextLine();
         System.out.println("choose your class, M (magician) or W (warrior)");

@@ -1,4 +1,4 @@
-package Card;
+package pl.threedcrafts.cardGameGen;
 
 import java.util.List;
 import java.util.Scanner;

@@ -1,4 +1,4 @@
-package Card;
+package pl.threedcrafts.cardGameGen;
 
 
 
@@ -51,5 +51,19 @@ public class Card {
 
         return "Karta: "+name+" "+lvl+"  \ntyp: "+type+" \nkoszt: "+costMoney+"\nsila: "+strongnest+"\n\n";
 
+    }
+
+    public String toStringForHtml(){
+        String lvl;
+        if(strongnest>8){
+            lvl="(bardzo rzadki)";
+        }else if(strongnest>5){
+
+            lvl ="(rzadki)";
+        }else{
+            lvl="(zwykly)";
+        }
+
+        return "Karta: "+name+" "+lvl+"  <br>typ: "+type+" <br>koszt: "+costMoney+"\nsila: "+strongnest+"<br>";
     }
 }

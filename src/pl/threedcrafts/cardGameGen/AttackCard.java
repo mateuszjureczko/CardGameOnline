@@ -1,4 +1,4 @@
-package Card;
+package pl.threedcrafts.cardGameGen;
 
 public class AttackCard extends Card {
 

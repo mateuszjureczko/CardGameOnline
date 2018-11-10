@@ -1,4 +1,4 @@
-package Card;
+package pl.threedcrafts.cardGameGen;
 
 import com.sun.xml.internal.ws.util.xml.NamedNodeMapIterator;
 
@@ -6,12 +6,12 @@ import java.util.*;
 
 public class cardGenerator {
     //those data could be change to database;
-    private List<String> nounListHeal = new ArrayList<String>();
+    private List<nounType> nounListHeal = new ArrayList<nounType>();
     private List<String> adjectiveListHealPrefix = new ArrayList<String>();
     private List<String> adjectiveListHealSuffix = new ArrayList<String>();
 
 
-    private List<String> nounListAttack = new ArrayList<String>();
+    private List<nounType> nounListAttack = new ArrayList<nounType>();
     private List<String> adjectiveListAttackPrefix = new ArrayList<String>();
     private List<String> adjectiveListAttackSuffix = new ArrayList<String>();
 
@@ -22,7 +22,7 @@ public class cardGenerator {
     //probability is 1-10
 
 
-    public List<String> getNounListHeal() {
+    public List<nounType> getNounListHeal() {
         return nounListHeal;
     }
 
@@ -34,7 +34,7 @@ public class cardGenerator {
         return adjectiveListHealSuffix;
     }
 
-    public List<String> getNounListAttack() {
+    public List<nounType> getNounListAttack() {
         return nounListAttack;
     }
 
@@ -80,9 +80,11 @@ public class cardGenerator {
         types.add("lecznicza");
         types.add("atakujaca");
 
-        nounListAttack.add("topor");
-        nounListAttack.add("miecz");
-        nounListAttack.add("bicz");
+
+        nounListAttack.add(new nounType("Topor",Type.MALE));
+        nounListAttack.add(new nounType("miecz",Type.MALE));
+        nounListAttack.add(new nounType("bicz",Type.MALE));
+
 
         adjectiveListAttackPrefix.add("");
         adjectiveListAttackPrefix.add("siermiężny");
@@ -94,10 +96,11 @@ public class cardGenerator {
         adjectiveListAttackSuffix.add("Andrzeja");
         adjectiveListAttackSuffix.add("potępienia");
 
-        nounListHeal.add("kwiatek");
-        nounListHeal.add("napój");
-        nounListHeal.add("środek");
-        nounListHeal.add("płyn");
+        nounListHeal.add(new nounType("kwiatek",Type.FEMININE));
+        nounListHeal.add(new nounType("napój",Type.FEMININE));
+        nounListHeal.add(new nounType("środek",Type.FEMININE));
+        nounListHeal.add(new nounType("płyn",Type.FEMININE));
+
 
         adjectiveListHealPrefix.add("");
         adjectiveListHealPrefix.add("leczniczy");
@@ -186,7 +189,7 @@ public class cardGenerator {
         Random rand = new Random();
         String suffix = new String("");
         String prefix =new String("");
-        String name =new String("");
+        nounType name = new nounType();
         switch(type){
 
 
@@ -207,7 +210,7 @@ public class cardGenerator {
 
         }
 
-return prefix+" "+name+" "+suffix;
+return prefix+" "+name.getName()+" "+suffix;
 
     }
     public List<Card> generate(Integer numberOfCards) {

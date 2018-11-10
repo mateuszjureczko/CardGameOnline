@@ -1,4 +1,4 @@
-package Card;
+package pl.threedcrafts.cardGameGen;
 
 public class EffectCard extends Card{
     int lifeUntilRound;
