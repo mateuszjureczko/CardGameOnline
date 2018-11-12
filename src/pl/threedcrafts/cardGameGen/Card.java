@@ -5,17 +5,20 @@ package pl.threedcrafts.cardGameGen;
 public class Card {
 
     int costMoney;
+
     int strongnest;
     String name;
-    String type;
+    CardType cardType;
+    ClassType cardForClassType;
     public void useCard(Player playerone, Player playertwo){
     }
 
-    public Card(int costMoney, int strongnest, String name, String type) {
+    public Card(int costMoney, int strongnest, String name, CardType cardType,ClassType cardForClassType) {
         this.costMoney = costMoney;
         this.strongnest = strongnest;
         this.name = name;
-        this.type = type;
+        this.cardType = cardType;
+        this.cardForClassType =  cardForClassType;
     }
 
     public int getCostMoney() {
@@ -32,9 +35,7 @@ public class Card {
         return name;
     }
 
-    public String getType() {
-        return type;
-    }
+
 
 
     @Override
@@ -49,7 +50,7 @@ public class Card {
             lvl="(zwykly)";
         }
 
-        return "Karta: "+name+" "+lvl+"  \ntyp: "+type+" \nkoszt: "+costMoney+"\nsila: "+strongnest+"\n\n";
+        return "Karta: "+name+" "+lvl+"  \ntyp: "+cardForClassType.toString()+" \nkoszt: "+costMoney+"\nsila: "+strongnest+"\n\n";
 
     }
 
@@ -64,6 +65,6 @@ public class Card {
             lvl="(zwykly)";
         }
 
-        return "Karta: "+name+" "+lvl+"  <br>typ: "+type+" <br>koszt: "+costMoney+"\nsila: "+strongnest+"<br>";
+        return "Karta: "+name+" "+lvl+"  <br>typ: "+cardForClassType.toString()+" <br>koszt: "+costMoney+"\nsila: "+strongnest+"<br>";
     }
 }

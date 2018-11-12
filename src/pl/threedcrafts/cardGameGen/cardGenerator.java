@@ -6,23 +6,24 @@ import java.util.*;
 
 public class cardGenerator {
     //those data could be change to database;
-    private List<nounType> nounListHeal = new ArrayList<nounType>();
+    private List<Noun> nounListHeal = new ArrayList<Noun>();
     private List<String> adjectiveListHealPrefix = new ArrayList<String>();
     private List<String> adjectiveListHealSuffix = new ArrayList<String>();
 
 
-    private List<nounType> nounListAttack = new ArrayList<nounType>();
+    private List<Noun> nounListAttack = new ArrayList<Noun>();
     private List<String> adjectiveListAttackPrefix = new ArrayList<String>();
     private List<String> adjectiveListAttackSuffix = new ArrayList<String>();
 
-    private List<String> types = new ArrayList<String>();
-    private Map<String, Integer> probalityOfType = new HashMap<String, Integer>();
+
+    private Map<CardType, Integer>
+            probalityOfType = new HashMap<CardType, Integer>();
     private Map<Integer, Integer> probablyOfStrong = new HashMap<Integer, Integer>();
     //elem can has 1-10 of Strong
     //probability is 1-10
 
 
-    public List<nounType> getNounListHeal() {
+    public List<Noun> getNounListHeal() {
         return nounListHeal;
     }
 
@@ -34,7 +35,7 @@ public class cardGenerator {
         return adjectiveListHealSuffix;
     }
 
-    public List<nounType> getNounListAttack() {
+    public List<Noun> getNounListAttack() {
         return nounListAttack;
     }
 
@@ -46,11 +47,9 @@ public class cardGenerator {
         return adjectiveListAttackSuffix;
     }
 
-    public List<String> getTypes() {
-        return types;
-    }
 
-    public Map<String, Integer> getProbalityOfType() {
+
+    public Map<CardType, Integer> getProbalityOfType() {
         return probalityOfType;
     }
 
@@ -73,17 +72,16 @@ public class cardGenerator {
         this.probablyOfStrong.put(8, 2);
         this.probablyOfStrong.put(9, 2);
         this.probablyOfStrong.put(10, 1);
-        probalityOfType.put("heal", 3);
-        probalityOfType.put("attack", 10);
-        probalityOfType.put("effect", 5);
+        probalityOfType.put(CardType.HEAL, 3);
+        probalityOfType.put(CardType.ATTACK, 10);
+        probalityOfType.put(CardType.EFFECT, 5);
 
-        types.add("lecznicza");
-        types.add("atakujaca");
+;
 
 
-        nounListAttack.add(new nounType("Topor",Type.MALE));
-        nounListAttack.add(new nounType("miecz",Type.MALE));
-        nounListAttack.add(new nounType("bicz",Type.MALE));
+        nounListAttack.add(new Noun("Topor",NounType.MALE));
+        nounListAttack.add(new Noun("miecz",NounType.MALE));
+        nounListAttack.add(new Noun("bicz",NounType.MALE));
 
 
         adjectiveListAttackPrefix.add("");
@@ -96,10 +94,10 @@ public class cardGenerator {
         adjectiveListAttackSuffix.add("Andrzeja");
         adjectiveListAttackSuffix.add("potępienia");
 
-        nounListHeal.add(new nounType("kwiatek",Type.FEMININE));
-        nounListHeal.add(new nounType("napój",Type.FEMININE));
-        nounListHeal.add(new nounType("środek",Type.FEMININE));
-        nounListHeal.add(new nounType("płyn",Type.FEMININE));
+        nounListHeal.add(new Noun("kwiatek",NounType.FEMININE));
+        nounListHeal.add(new Noun("napój",NounType.FEMININE));
+        nounListHeal.add(new Noun("środek",NounType.FEMININE));
+        nounListHeal.add(new Noun("płyn",NounType.FEMININE));
 
 
         adjectiveListHealPrefix.add("");
@@ -116,12 +114,12 @@ public class cardGenerator {
     }
 
 
-    private String getTheType() {
-        Iterator<Map.Entry<String, Integer>> elem = getProbalityOfType().entrySet().iterator();
+    private CardType getTheType() {
+        Iterator<Map.Entry<CardType, Integer>> elem = getProbalityOfType().entrySet().iterator();
         Integer sumOfProbablies = 0;
       //  System.out.println(this.probalityOfType);
         while (elem.hasNext()) {
-            Map.Entry<String, Integer> myElem = elem.next();
+            Map.Entry<CardType, Integer> myElem = elem.next();
             sumOfProbablies += myElem.getValue();
         }
 
@@ -132,11 +130,11 @@ public class cardGenerator {
        // System.out.println("wylosowana liczba:"+tickets);
 
         int sumOfTickets = 0;
-        String strong = "";
-       // System.out.println(this.probalityOfType);
-        Iterator<Map.Entry<String, Integer>> itr = getProbalityOfType().entrySet().iterator();
+        CardType strong = null;
+        // System.out.println(this.probalityOfType);
+        Iterator<Map.Entry<CardType, Integer>> itr = getProbalityOfType().entrySet().iterator();
         while (itr.hasNext()) {
-            Map.Entry<String, Integer> myElem = itr.next();
+            Map.Entry<CardType, Integer> myElem = itr.next();
             sumOfTickets += myElem.getValue();
             //System.out.println("suma: "+sumOfTickets);
             if (sumOfTickets > tickets) {
@@ -185,30 +183,30 @@ public class cardGenerator {
 
     }
 
-    private String getTheName(String type){
+    private String getTheName(CardType type){
         Random rand = new Random();
         String suffix = new String("");
         String prefix =new String("");
-        nounType name = new nounType();
-        switch(type){
-
-
-
-
-            case "heal":
-                 suffix = adjectiveListHealSuffix.get(rand.nextInt(adjectiveListHealSuffix.size()));
-                 prefix = adjectiveListHealPrefix.get(rand.nextInt(adjectiveListHealPrefix.size()));
-                 name = nounListHeal.get(rand.nextInt(nounListHeal.size()));
-                break;
-
-            case "attack":
-                 suffix = adjectiveListAttackSuffix.get(rand.nextInt(adjectiveListAttackSuffix.size()));
-                 prefix = adjectiveListAttackPrefix.get(rand.nextInt(adjectiveListAttackPrefix.size()));
-                 name = nounListAttack.get(rand.nextInt(nounListAttack.size()));
-                break;
-
-
+        Noun name = new Noun();
+        if(type.equals(CardType.ATTACK)){
+            suffix = adjectiveListHealSuffix.get(rand.nextInt(adjectiveListHealSuffix.size()));
+            prefix = adjectiveListHealPrefix.get(rand.nextInt(adjectiveListHealPrefix.size()));
+            name = nounListHeal.get(rand.nextInt(nounListHeal.size()));
         }
+        if(type.equals(CardType.HEAL)){
+            suffix = adjectiveListAttackSuffix.get(rand.nextInt(adjectiveListAttackSuffix.size()));
+            prefix = adjectiveListAttackPrefix.get(rand.nextInt(adjectiveListAttackPrefix.size()));
+            name = nounListAttack.get(rand.nextInt(nounListAttack.size()));
+        }
+        if(type.equals(CardType.EFFECT)){
+            suffix = "";
+            prefix = "";
+            name = nounListHeal.get(1);
+        }
+
+
+
+
 
 return prefix+" "+name.getName()+" "+suffix;
 
@@ -217,13 +215,13 @@ return prefix+" "+name.getName()+" "+suffix;
         List<Card> deck = new ArrayList<Card>();
 
         for(int i=0; i<numberOfCards;i++){
-            String type=getTheType();
+            CardType type=getTheType();
             System.out.println(type);
             int strongnest = getTheStrongnest();
             String name = getTheName(type);
             //counting number of probality tickets
             int cost=(int)Math.floor((double) strongnest*0.7)+1;
-            deck.add(new Card(cost,strongnest,name,type));
+            deck.add(new Card(cost,strongnest,name,type,ClassType.MAGICIAN));
         }
 
         return deck;

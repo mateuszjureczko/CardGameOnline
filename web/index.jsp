@@ -10,8 +10,8 @@
   <head>
     <title>$Title$</title>
   </head>
-  <body>
-  <a href="cardgame"> play!</a>
+  <body>.
+  <a href="startgame"> play!</a>
   <a href="cardgame?shot=slim shady"> my name is slim shady!</a
   </body>
 </html>

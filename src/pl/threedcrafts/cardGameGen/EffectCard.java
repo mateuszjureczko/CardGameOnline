@@ -14,13 +14,12 @@ public class EffectCard extends Card{
         this.lifeUntilRound = round+life;
     }
 
-
-
-    public EffectCard(int costMoney, int strongnest, String name, String type, int cash, int ability,int health,int life) {
-        super(costMoney, strongnest, name, type);
+    public EffectCard(int costMoney, int strongnest, String name, CardType type, ClassType cardForClassType, int lifeUntilRound, int life, int cash, int ability, int health) {
+        super(costMoney, strongnest, name, type, cardForClassType);
+        this.lifeUntilRound = lifeUntilRound;
+        this.life = life;
         this.cash = cash;
-        this.ability=ability;
-        this.health=health;
-        this.life=life;
+        this.ability = ability;
+        this.health = health;
     }
 }

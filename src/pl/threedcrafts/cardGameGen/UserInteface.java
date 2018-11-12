@@ -13,12 +13,12 @@ public class UserInteface {
             System.out.println(cardNum);
             Card card = deck.get(cardNum-1);
             System.out.println("---------------\nchosen card: \n"+card+"\n\n--------------------");
-            if(card.type.equals("empty")){
+            if(card.cardType==null){
                 i--;
                 System.out.println("choose proper card!");
             }else{
                 player.addCard(card);
-                deck.set(cardNum-1,new Card(0,0,"empty","empty"));
+                deck.set(cardNum-1,new Card(0,0,null,null,null));
             }
         }
     }

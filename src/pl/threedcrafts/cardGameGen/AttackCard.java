@@ -10,7 +10,7 @@ public class AttackCard extends Card {
 
 
 
-    public AttackCard(int costMoney, int strongnest, String name, String type) {
-        super(costMoney, strongnest, name, type);
+    public AttackCard(int costMoney, int strongnest, String name, String type,ClassType cardForClassType) {
+        super(costMoney, strongnest, name, CardType.ATTACK,cardForClassType);
     }
 }

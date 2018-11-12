@@ -7,21 +7,37 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="3df1d3fc-61f7-4aab-b352-2ab1b2a94975" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/pl/threedcrafts/cardGameGen/AdjectiveType.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/pl/threedcrafts/cardGameGen/Type.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/pl/threedcrafts/cardGameGen/nounType.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/pl/threedcrafts/cardGameGen/CardType.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/pl/threedcrafts/cardGameGen/ClassType.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/pl/threedcrafts/cardgame/StartServlet.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/cardGameOnline_war_exploded/WEB-INF/classes/pl/threedcrafts/cardgame/TableTopServlet.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/cardGameOnline_war_exploded/WEB-INF/classes/pl/threedcrafts/cardgame/TableTopServlet.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/cardGameOnline/pl/threedcrafts/cardgame/TableTopServlet.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/cardGameOnline/pl/threedcrafts/cardgame/TableTopServlet.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/cardGameOnline_war_exploded/WEB-INF/classes/pl/threedcrafts/cardGameGen/AttackCard.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/cardGameOnline_war_exploded/WEB-INF/classes/pl/threedcrafts/cardGameGen/AttackCard.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/cardGameOnline_war_exploded/WEB-INF/classes/pl/threedcrafts/cardGameGen/Card.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/cardGameOnline_war_exploded/WEB-INF/classes/pl/threedcrafts/cardGameGen/Card.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/cardGameOnline_war_exploded/WEB-INF/classes/pl/threedcrafts/cardGameGen/EffectCard.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/cardGameOnline_war_exploded/WEB-INF/classes/pl/threedcrafts/cardGameGen/EffectCard.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/cardGameOnline_war_exploded/WEB-INF/classes/pl/threedcrafts/cardGameGen/HealCard.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/cardGameOnline_war_exploded/WEB-INF/classes/pl/threedcrafts/cardGameGen/HealCard.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/cardGameOnline_war_exploded/WEB-INF/classes/pl/threedcrafts/cardGameGen/Type.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/cardGameOnline_war_exploded/WEB-INF/classes/pl/threedcrafts/cardGameGen/UserInteface.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/cardGameOnline_war_exploded/WEB-INF/classes/pl/threedcrafts/cardGameGen/UserInteface.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/cardGameOnline_war_exploded/WEB-INF/classes/pl/threedcrafts/cardGameGen/cardGenerator.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/cardGameOnline_war_exploded/WEB-INF/classes/pl/threedcrafts/cardGameGen/cardGenerator.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/cardGameOnline_war_exploded/WEB-INF/classes/pl/threedcrafts/cardGameGen/nounType.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/cardGameOnline_war_exploded/WEB-INF/classes/pl/threedcrafts/cardGameGen/nounType.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/cardGameOnline_war_exploded/index.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/cardGameOnline_war_exploded/index.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/cardGameOnline/pl/threedcrafts/cardGameGen/AttackCard.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/cardGameOnline/pl/threedcrafts/cardGameGen/AttackCard.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/cardGameOnline/pl/threedcrafts/cardGameGen/Card.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/cardGameOnline/pl/threedcrafts/cardGameGen/Card.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/cardGameOnline/pl/threedcrafts/cardGameGen/EffectCard.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/cardGameOnline/pl/threedcrafts/cardGameGen/EffectCard.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/cardGameOnline/pl/threedcrafts/cardGameGen/HealCard.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/cardGameOnline/pl/threedcrafts/cardGameGen/HealCard.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/cardGameOnline/pl/threedcrafts/cardGameGen/Type.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/cardGameOnline/pl/threedcrafts/cardGameGen/UserInteface.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/cardGameOnline/pl/threedcrafts/cardGameGen/UserInteface.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/cardGameOnline/pl/threedcrafts/cardGameGen/cardGenerator.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/cardGameOnline/pl/threedcrafts/cardGameGen/cardGenerator.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/cardGameOnline/pl/threedcrafts/cardGameGen/nounType.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/cardGameOnline/pl/threedcrafts/cardGameGen/nounType.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pl/threedcrafts/cardGameGen/AdjectiveType.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/pl/threedcrafts/cardGameGen/AdjectiveType.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/pl/threedcrafts/cardGameGen/AttackCard.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/pl/threedcrafts/cardGameGen/AttackCard.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/pl/threedcrafts/cardGameGen/Card.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/pl/threedcrafts/cardGameGen/Card.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/pl/threedcrafts/cardGameGen/EffectCard.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/pl/threedcrafts/cardGameGen/EffectCard.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/pl/threedcrafts/cardGameGen/HealCard.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/pl/threedcrafts/cardGameGen/HealCard.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pl/threedcrafts/cardGameGen/Player.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/pl/threedcrafts/cardGameGen/Player.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pl/threedcrafts/cardGameGen/TableTop.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/pl/threedcrafts/cardGameGen/TableTop.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pl/threedcrafts/cardGameGen/Type.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/pl/threedcrafts/cardGameGen/NounType.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/pl/threedcrafts/cardGameGen/UserInteface.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/pl/threedcrafts/cardGameGen/UserInteface.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/pl/threedcrafts/cardGameGen/cardGenerator.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/pl/threedcrafts/cardGameGen/cardGenerator.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pl/threedcrafts/cardgame/TableTopServlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/pl/threedcrafts/cardgame/TableTopServlet.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pl/threedcrafts/cardGameGen/nounType.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/pl/threedcrafts/cardGameGen/Noun.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/index.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/web/index.jsp" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -75,22 +91,26 @@
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
-          <entry key="java" value="1379" />
+          <entry key="java" value="2575" />
+          <entry key="jsp" value="10" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="JAVA" value="1379" />
+          <entry key="JAVA" value="2575" />
+          <entry key="JSP" value="10" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
         <counts>
-          <entry key="java" value="11" />
+          <entry key="java" value="24" />
+          <entry key="jsp" value="1" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
         <counts>
-          <entry key="JAVA" value="11" />
+          <entry key="JAVA" value="24" />
+          <entry key="JSP" value="1" />
         </counts>
       </usages-collector>
     </session>
@@ -103,8 +123,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/pl/threedcrafts/cardgame/TableTopServlet.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="311">
-              <caret line="25" column="69" selection-start-line="25" selection-start-column="69" selection-end-line="25" selection-end-column="69" />
+            <state relative-caret-position="323">
+              <caret line="19" column="12" lean-forward="true" selection-start-line="19" selection-start-column="12" selection-end-line="19" selection-end-column="60" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -116,7 +136,16 @@
         <entry file="file://$PROJECT_DIR$/src/pl/threedcrafts/cardGameGen/Card.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="238">
-              <caret line="55" column="33" selection-start-line="55" selection-start-column="18" selection-end-line="55" selection-end-column="33" />
+              <caret line="14" lean-forward="true" selection-start-line="14" selection-end-line="14" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/web/index.jsp">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="204">
+              <caret line="12" column="9" selection-start-line="12" selection-start-column="9" selection-end-line="12" selection-end-column="9" />
             </state>
           </provider>
         </entry>
@@ -124,69 +153,61 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/pl/threedcrafts/cardGameGen/cardGenerator.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="153">
-              <caret line="89" column="43" selection-start-line="89" selection-start-column="39" selection-end-line="89" selection-end-column="49" />
+            <state relative-caret-position="305">
+              <caret line="223" column="74" selection-start-line="223" selection-start-column="74" selection-end-line="223" selection-end-column="74" />
               <folding>
-                <element signature="e#252#262#0" expanded="true" />
-                <element signature="e#477#487#0" expanded="true" />
-                <element signature="e#6825#6831#0" expanded="true" />
+                <element signature="e#248#254#0" expanded="true" />
+                <element signature="e#465#471#0" expanded="true" />
+                <element signature="e#710#729#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/pl/threedcrafts/cardGameGen/AdjectiveType.java">
+        <entry file="file://$PROJECT_DIR$/src/pl/threedcrafts/cardGameGen/EffectCard.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="272">
-              <caret line="16" column="9" lean-forward="true" selection-start-line="16" selection-start-column="9" selection-end-line="16" selection-end-column="9" />
-              <folding>
-                <element signature="e#309#310#0" expanded="true" />
-                <element signature="e#336#337#0" expanded="true" />
-                <element signature="e#443#444#0" expanded="true" />
-                <element signature="e#474#475#0" expanded="true" />
-                <element signature="e#601#602#0" expanded="true" />
-                <element signature="e#636#637#0" expanded="true" />
-              </folding>
+              <caret line="16" column="175" selection-start-line="16" selection-start-column="175" selection-end-line="16" selection-end-column="175" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/pl/threedcrafts/cardGameGen/HealCard.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="153">
+              <caret line="9" column="108" selection-start-line="9" selection-start-column="108" selection-end-line="9" selection-end-column="108" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/pl/threedcrafts/cardGameGen/ClassType.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="51">
+              <caret line="3" column="2" lean-forward="true" selection-start-line="3" selection-start-column="2" selection-end-line="6" selection-end-column="15" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/pl/threedcrafts/cardGameGen/AttackCard.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="238">
+              <caret line="14" column="5" lean-forward="true" selection-start-line="14" selection-start-column="5" selection-end-line="14" selection-end-column="5" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/pl/threedcrafts/cardGameGen/nounType.java">
+        <entry file="file://$PROJECT_DIR$/src/pl/threedcrafts/cardgame/StartServlet.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="119">
-              <caret line="7" column="24" lean-forward="true" selection-start-line="7" selection-start-column="24" selection-end-line="7" selection-end-column="24" />
-              <folding>
-                <element signature="e#232#233#0" expanded="true" />
-                <element signature="e#259#260#0" expanded="true" />
-                <element signature="e#299#300#0" expanded="true" />
-                <element signature="e#331#332#0" expanded="true" />
-                <element signature="e#362#363#0" expanded="true" />
-                <element signature="e#389#390#0" expanded="true" />
-                <element signature="e#429#430#0" expanded="true" />
-                <element signature="e#461#462#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/pl/threedcrafts/cardGameGen/Type.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="85">
-              <caret line="5" column="16" lean-forward="true" selection-start-line="5" selection-start-column="16" selection-end-line="5" selection-end-column="16" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/pl/threedcrafts/cardGameGen/TableTop.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="374">
-              <caret line="22" lean-forward="true" selection-start-line="22" selection-end-line="22" />
+            <state relative-caret-position="154">
+              <caret line="19" column="51" selection-start-line="19" selection-start-column="51" selection-end-line="19" selection-end-column="51" />
               <folding>
                 <element signature="imports" expanded="true" />
+                <element signature="e#980#988#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -195,29 +216,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/pl/threedcrafts/cardGameGen/UserInteface.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="17">
-              <caret line="1" selection-start-line="1" selection-end-line="1" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/pl/threedcrafts/cardGameGen/Player.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="68">
-              <caret line="5" column="19" selection-start-line="5" selection-start-column="13" selection-end-line="5" selection-end-column="19" />
-              <folding>
-                <element signature="e#289#295#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/web/start.jsp">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="221">
-              <caret line="13" column="10" selection-start-line="13" selection-start-column="10" selection-end-line="13" selection-end-column="10" />
+            <state relative-caret-position="187">
+              <caret line="12" column="40" lean-forward="true" selection-start-line="12" selection-start-column="40" selection-end-line="12" selection-end-column="40" />
             </state>
           </provider>
         </entry>
@@ -228,9 +228,16 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="Jsp File" />
+        <option value="Enum" />
         <option value="Class" />
       </list>
     </option>
+  </component>
+  <component name="FindInProjectRecents">
+    <findStrings>
+      <find>NounType</find>
+      <find>probalityOfType</find>
+    </findStrings>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -239,19 +246,23 @@
     <option name="CHANGED_PATHS">
       <list>
         <option value="$PROJECT_DIR$/web/start.jsp" />
-        <option value="$PROJECT_DIR$/web/index.jsp" />
-        <option value="$PROJECT_DIR$/src/pl/threedcrafts/cardGameGen/AttackCard.java" />
-        <option value="$PROJECT_DIR$/src/pl/threedcrafts/cardGameGen/EffectCard.java" />
-        <option value="$PROJECT_DIR$/src/pl/threedcrafts/cardGameGen/HealCard.java" />
         <option value="$PROJECT_DIR$/src/pl/threedcrafts/cardGameGen/Player.java" />
-        <option value="$PROJECT_DIR$/src/pl/threedcrafts/cardGameGen/UserInteface.java" />
-        <option value="$PROJECT_DIR$/src/pl/threedcrafts/cardGameGen/Card.java" />
         <option value="$PROJECT_DIR$/src/pl/threedcrafts/cardGameGen/TableTop.java" />
         <option value="$PROJECT_DIR$/src/pl/threedcrafts/cardgame/TableTopServlet.java" />
-        <option value="$PROJECT_DIR$/src/pl/threedcrafts/cardGameGen/Type.java" />
-        <option value="$PROJECT_DIR$/src/pl/threedcrafts/cardGameGen/cardGenerator.java" />
-        <option value="$PROJECT_DIR$/src/pl/threedcrafts/cardGameGen/AdjectiveType.java" />
         <option value="$PROJECT_DIR$/src/pl/threedcrafts/cardGameGen/nounType.java" />
+        <option value="$PROJECT_DIR$/src/pl/threedcrafts/cardGameGen/Type.java" />
+        <option value="$PROJECT_DIR$/src/pl/threedcrafts/cardGameGen/Noun.java" />
+        <option value="$PROJECT_DIR$/src/pl/threedcrafts/cardGameGen/ClassType.java" />
+        <option value="$PROJECT_DIR$/src/pl/threedcrafts/cardGameGen/AdjectiveType.java" />
+        <option value="$PROJECT_DIR$/src/pl/threedcrafts/cardGameGen/CardType.java" />
+        <option value="$PROJECT_DIR$/src/pl/threedcrafts/cardGameGen/AttackCard.java" />
+        <option value="$PROJECT_DIR$/src/pl/threedcrafts/cardGameGen/cardGenerator.java" />
+        <option value="$PROJECT_DIR$/src/pl/threedcrafts/cardGameGen/EffectCard.java" />
+        <option value="$PROJECT_DIR$/src/pl/threedcrafts/cardGameGen/HealCard.java" />
+        <option value="$PROJECT_DIR$/src/pl/threedcrafts/cardGameGen/UserInteface.java" />
+        <option value="$PROJECT_DIR$/src/pl/threedcrafts/cardGameGen/Card.java" />
+        <option value="$PROJECT_DIR$/web/index.jsp" />
+        <option value="$PROJECT_DIR$/src/pl/threedcrafts/cardgame/StartServlet.java" />
       </list>
     </option>
   </component>
@@ -268,10 +279,9 @@
     <option name="FILTER_DEBUG" value="true" />
     <option name="CUSTOM_FILTER" />
   </component>
-  <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="2986" />
-    <option name="y" value="-11" />
-    <option name="width" value="1934" />
+  <component name="ProjectFrameBounds">
+    <option name="x" value="2733" />
+    <option name="width" value="1754" />
     <option name="height" value="1047" />
   </component>
   <component name="ProjectView">
@@ -333,7 +343,7 @@
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1541887811545" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1542033492088" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
   </component>
@@ -440,18 +450,51 @@
       <option name="presentableId" value="Default" />
       <updated>1541866619071</updated>
       <workItem from="1541866622740" duration="2308000" />
-      <workItem from="1541875106347" duration="9813000" />
+      <workItem from="1541875106347" duration="21297000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="12121000" />
+    <option name="totallyTimeSpent" value="23605000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="1912" y="-8" width="2576" height="1056" extended-state="6" />
+    <frame x="2733" y="0" width="1754" height="1047" extended-state="0" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.4938704" visible="true" weight="0.2527822" />
+      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.4938704" visible="true" weight="0.37544274" />
+      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
+      <window_info id="Designer" order="2" />
+      <window_info id="Image Layers" order="3" />
+      <window_info id="UI Designer" order="4" />
+      <window_info id="Favorites" order="5" sideWeight="0.5061296" side_tool="true" weight="0.2527822" />
+      <window_info id="Capture Tool" order="6" />
+      <window_info id="Web" order="7" side_tool="true" />
+      <window_info anchor="bottom" id="Message" order="0" />
+      <window_info anchor="bottom" id="Find" order="1" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.38512036" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.3997833" />
+      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
+      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
+      <window_info anchor="bottom" id="TODO" order="6" />
+      <window_info anchor="bottom" id="Application Servers" order="7" />
+      <window_info anchor="bottom" id="Terminal" order="8" />
+      <window_info anchor="bottom" id="Event Log" order="9" side_tool="true" />
+      <window_info anchor="bottom" id="Messages" order="10" weight="0.32936078" />
+      <window_info anchor="bottom" id="Java Enterprise" order="11" />
+      <window_info anchor="bottom" id="Database Changes" order="12" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Version Control" order="13" weight="0.32936078" />
+      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
+      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+      <window_info anchor="right" id="Palette" order="3" />
+      <window_info anchor="right" id="Capture Analysis" order="4" />
+      <window_info anchor="right" id="Maven Projects" order="5" />
+      <window_info anchor="right" id="Database" order="6" />
+      <window_info anchor="right" id="Palette&#9;" order="7" />
+      <window_info anchor="right" id="Theme Preview" order="8" />
+    </layout>
+    <layout-to-restore>
+      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.4938704" visible="true" weight="0.2527822" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Designer" order="2" />
       <window_info id="Image Layers" order="3" />
@@ -482,7 +525,7 @@
       <window_info anchor="right" id="Database" order="6" />
       <window_info anchor="right" id="Palette&#9;" order="7" />
       <window_info anchor="right" id="Theme Preview" order="8" />
-    </layout>
+    </layout-to-restore>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
@@ -508,34 +551,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/web/index.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="238">
-          <caret line="14" column="35" selection-start-line="14" selection-start-column="35" selection-end-line="14" selection-end-column="35" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/pl/threedcrafts/cardGameGen/EffectCard.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="51">
-          <caret line="3" column="22" selection-start-line="3" selection-start-column="8" selection-end-line="3" selection-end-column="22" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/pl/threedcrafts/cardGameGen/HealCard.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="34">
-          <caret line="2" column="13" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/pl/threedcrafts/cardGameGen/AttackCard.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="34">
-          <caret line="2" column="33" lean-forward="true" selection-start-line="2" selection-start-column="33" selection-end-line="2" selection-end-column="33" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/web/start.jsp">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="221">
@@ -543,30 +558,27 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/pl/threedcrafts/cardGameGen/Player.java">
+    <entry file="file://$PROJECT_DIR$/src/pl/threedcrafts/cardGameGen/Noun.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="68">
-          <caret line="5" column="19" selection-start-line="5" selection-start-column="13" selection-end-line="5" selection-end-column="19" />
+        <state relative-caret-position="187">
+          <caret line="11" column="20" selection-start-line="11" selection-start-column="20" selection-end-line="11" selection-end-column="20" />
           <folding>
-            <element signature="e#289#295#0" expanded="true" />
+            <element signature="e#232#233#0" expanded="true" />
+            <element signature="e#259#260#0" expanded="true" />
+            <element signature="e#299#300#0" expanded="true" />
+            <element signature="e#331#332#0" expanded="true" />
+            <element signature="e#362#363#0" expanded="true" />
+            <element signature="e#389#390#0" expanded="true" />
+            <element signature="e#429#430#0" expanded="true" />
+            <element signature="e#461#462#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/pl/threedcrafts/cardGameGen/UserInteface.java">
+    <entry file="file://$PROJECT_DIR$/src/pl/threedcrafts/cardGameGen/NounType.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="17">
-          <caret line="1" selection-start-line="1" selection-end-line="1" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/pl/threedcrafts/cardgame/TableTopServlet.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="311">
-          <caret line="25" column="69" selection-start-line="25" selection-start-column="69" selection-end-line="25" selection-end-column="69" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
+        <state relative-caret-position="34">
+          <caret line="2" column="20" selection-start-line="2" selection-start-column="20" selection-end-line="2" selection-end-column="20" />
         </state>
       </provider>
     </entry>
@@ -580,29 +592,13 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/pl/threedcrafts/cardGameGen/Card.java">
+    <entry file="file://$PROJECT_DIR$/src/pl/threedcrafts/cardGameGen/Player.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="238">
-          <caret line="55" column="33" selection-start-line="55" selection-start-column="18" selection-end-line="55" selection-end-column="33" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/pl/threedcrafts/cardGameGen/cardGenerator.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="153">
-          <caret line="89" column="43" selection-start-line="89" selection-start-column="39" selection-end-line="89" selection-end-column="49" />
+        <state relative-caret-position="68">
+          <caret line="5" column="19" selection-start-line="5" selection-start-column="13" selection-end-line="5" selection-end-column="19" />
           <folding>
-            <element signature="e#252#262#0" expanded="true" />
-            <element signature="e#477#487#0" expanded="true" />
-            <element signature="e#6825#6831#0" expanded="true" />
+            <element signature="e#289#295#0" expanded="true" />
           </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/pl/threedcrafts/cardGameGen/Type.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="85">
-          <caret line="5" column="16" lean-forward="true" selection-start-line="5" selection-start-column="16" selection-end-line="5" selection-end-column="16" />
         </state>
       </provider>
     </entry>
@@ -610,30 +606,94 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="272">
           <caret line="16" column="9" lean-forward="true" selection-start-line="16" selection-start-column="9" selection-end-line="16" selection-end-column="9" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/pl/threedcrafts/cardGameGen/CardType.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="85">
+          <caret line="5" column="8" selection-start-line="5" selection-start-column="8" selection-end-line="5" selection-end-column="8" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/pl/threedcrafts/cardGameGen/AttackCard.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="238">
+          <caret line="14" column="5" lean-forward="true" selection-start-line="14" selection-start-column="5" selection-end-line="14" selection-end-column="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/pl/threedcrafts/cardGameGen/ClassType.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="51">
+          <caret line="3" column="2" lean-forward="true" selection-start-line="3" selection-start-column="2" selection-end-line="6" selection-end-column="15" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/pl/threedcrafts/cardGameGen/cardGenerator.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="305">
+          <caret line="223" column="74" selection-start-line="223" selection-start-column="74" selection-end-line="223" selection-end-column="74" />
           <folding>
-            <element signature="e#309#310#0" expanded="true" />
-            <element signature="e#336#337#0" expanded="true" />
-            <element signature="e#443#444#0" expanded="true" />
-            <element signature="e#474#475#0" expanded="true" />
-            <element signature="e#601#602#0" expanded="true" />
-            <element signature="e#636#637#0" expanded="true" />
+            <element signature="e#248#254#0" expanded="true" />
+            <element signature="e#465#471#0" expanded="true" />
+            <element signature="e#710#729#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/pl/threedcrafts/cardGameGen/nounType.java">
+    <entry file="file://$PROJECT_DIR$/src/pl/threedcrafts/cardGameGen/EffectCard.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="119">
-          <caret line="7" column="24" lean-forward="true" selection-start-line="7" selection-start-column="24" selection-end-line="7" selection-end-column="24" />
+        <state relative-caret-position="272">
+          <caret line="16" column="175" selection-start-line="16" selection-start-column="175" selection-end-line="16" selection-end-column="175" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/pl/threedcrafts/cardGameGen/HealCard.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="153">
+          <caret line="9" column="108" selection-start-line="9" selection-start-column="108" selection-end-line="9" selection-end-column="108" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/pl/threedcrafts/cardGameGen/UserInteface.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="187">
+          <caret line="12" column="40" lean-forward="true" selection-start-line="12" selection-start-column="40" selection-end-line="12" selection-end-column="40" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/pl/threedcrafts/cardGameGen/Card.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="238">
+          <caret line="14" lean-forward="true" selection-start-line="14" selection-end-line="14" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/pl/threedcrafts/cardgame/TableTopServlet.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="323">
+          <caret line="19" column="12" lean-forward="true" selection-start-line="19" selection-start-column="12" selection-end-line="19" selection-end-column="60" />
           <folding>
-            <element signature="e#232#233#0" expanded="true" />
-            <element signature="e#259#260#0" expanded="true" />
-            <element signature="e#299#300#0" expanded="true" />
-            <element signature="e#331#332#0" expanded="true" />
-            <element signature="e#362#363#0" expanded="true" />
-            <element signature="e#389#390#0" expanded="true" />
-            <element signature="e#429#430#0" expanded="true" />
-            <element signature="e#461#462#0" expanded="true" />
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/index.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="204">
+          <caret line="12" column="9" selection-start-line="12" selection-start-column="9" selection-end-line="12" selection-end-column="9" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/pl/threedcrafts/cardgame/StartServlet.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="154">
+          <caret line="19" column="51" selection-start-line="19" selection-start-column="51" selection-end-line="19" selection-end-column="51" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#980#988#0" expanded="true" />
           </folding>
         </state>
       </provider>

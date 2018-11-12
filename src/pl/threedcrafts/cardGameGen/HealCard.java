@@ -7,7 +7,7 @@ public class HealCard extends Card {
 
     }
 
-    public HealCard(int costMoney, int strongnest, String name, String type) {
-        super(costMoney, strongnest, name, type);
+    public HealCard(int costMoney, int strongnest, String name, CardType type, ClassType cardForClassType) {
+        super(costMoney, strongnest, name, type, cardForClassType);
     }
 }

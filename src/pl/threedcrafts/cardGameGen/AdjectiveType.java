@@ -5,14 +5,14 @@ public class AdjectiveType {
     String feminine;
     String unremarkable;
 
-    public String getVariatedAdjective(nounType type){
-        if(type.getType()==Type.FEMININE){
+    public String getVariatedAdjective(Noun type){
+        if(type.getType()==NounType.FEMININE){
             return this.getFeminine();
         }
-        if(type.getType()==Type.MALE){
+        if(type.getType()==NounType.MALE){
             return this.getMale();
         }
-        if(type.getType()==Type.UNREMARKABLE){
+        if(type.getType()==NounType.UNREMARKABLE){
             return this.getUnremarkable();
         }
         return null;
@@ -22,14 +22,9 @@ public class AdjectiveType {
     public String getMale() {
         return male;
     }
-
-
-
     public String getFeminine() {
         return feminine;
     }
-
-
     public String getUnremarkable() {
         return unremarkable;
     }

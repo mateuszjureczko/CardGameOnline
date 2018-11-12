@@ -1,13 +1,13 @@
 package pl.threedcrafts.cardGameGen;
 
-public class nounType {
+public class Noun {
     String name;
-    Type type;
+    NounType type;
 
 
-    public nounType(){};
+    public Noun(){};
 
-    public nounType(String name, Type type) {
+    public Noun(String name, NounType type) {
 
         this.name = name;
         this.type = type;
@@ -23,11 +23,11 @@ public class nounType {
         this.name = name;
     }
 
-    public Type getType() {
+    public NounType getType() {
         return type;
     }
 
-    public void setType(Type type) {
+    public void setType(NounType type) {
         this.type = type;
     }
 }
