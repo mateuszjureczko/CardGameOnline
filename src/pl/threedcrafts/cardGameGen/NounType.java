@@ -1,6 +1,6 @@
 package pl.threedcrafts.cardGameGen;
 
-public enum Type {
+public enum TypeOfNouns {
     MALE,
     FEMININE,
     UNREMARKABLE
